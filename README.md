@@ -31,7 +31,6 @@ fi
 Python Script Log in /usr1/log/python/oracle/your_python_script.log
 #python script example:
 #!/usr/bin/python2.7
-# -*- coding:utf-8 -*-
 import GraceDbCommon.oracle_common as orcl
 conn = orcl.oracle_common(oracle_server1)
 conn.connect()
@@ -61,7 +60,6 @@ New Class For SFTP by Paramiko, Thank you Paramiko
 
 python code like:
 #!/usr/bin/python2.7
-# -*- coding:utf-8 -*-
 from GraceDbCommon import sftp_common
 sftp=sftp_common("server_xxx")
 sftp.sftp_conn()
@@ -71,7 +69,6 @@ sftp.sftp_get("/data1/sftp_config.ini", "/usr1/sftp_config.ini")
 #####################################################################
 New Class For hive by pyhs2, Thank you pyhs2
 #!/usr/bin/python2.7
-# -*- coding:utf-8 -*-
 from GraceDbCommon import hive_common
 hive=hive_common("hive_server1")
 hive.connect()
